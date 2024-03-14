@@ -18,7 +18,7 @@
 .header{
    display: flex;
    justify-content: space-around;
-    
+   margin-left: 3px;
 }
 img{
     width:100px;
@@ -43,4 +43,106 @@ img{
 }
 .Com{
     color: purple;
+}
+.middle{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.EP{
+    color: purple; 
+    position: relative; 
+    margin-bottom: 1.5rem;
+   
+}
+.middle .EP::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 100%; 
+    height: 5px; 
+    background-color: purple; 
+   
+}
+.EP_after {
+    margin-top:1.5rem ;
+    margin-left: 20px;
+}
+.spanClass{
+    margin-left: 20px;
+}
+
+
+.flex1_class {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.EP::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 100%; 
+    height: 5px; 
+    background-color: purple; 
+}
+
+  
+.fontClass{
+    font-size: large;
+}
+.lastpart{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.grid_class{
+    display: grid;
+    grid-template-columns: (3,1ref);
+    grid-template-rows: repeat(2,1ref);
+    justify-content: start;
+    justify-items: first;
+    gap: .5rem;
+}
+.grid1{
+    grid-column-start:1 ;
+    grid-row-start: 1;
+}
+.grid2{
+    grid-column-start:2 ;
+    grid-row-start: 1;
+}
+.grid3{
+    grid-column-start:3 ;
+    grid-column-end:4;
+    grid-row-start: 1;
+}
+.grid4{
+    grid-column-start:1 ;
+    grid-column-end:2;
+    grid-row-start: 2;
+}
+.grid5{
+    grid-column-start:3 ;
+    grid-column-end:3;
+    grid-row-start: 2;
+}
+.fontClass1{
+    border: 1.8px solid mediumblue;
+    background-color: gray;
+    border-radius: .2rem;
+}
+.EP1{
+   padding-right: 10rem;
+}
+.aClass{
+    text-decoration: none;
+    font-size: large;
+  
 }
